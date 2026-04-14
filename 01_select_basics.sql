@@ -19,7 +19,7 @@ FROM superstore;
 -- 2. Retrieve only specific columns
 --    Pick just the columns you need — much faster and cleaner.
 -- ----------------------------------------------------------------
-SELECT segment, city, state
+SELECT customer_name, segment, city, state
 FROM superstore;
 
 
@@ -28,7 +28,7 @@ FROM superstore;
 --    Rename a column in your result without changing the table.
 -- ----------------------------------------------------------------
 SELECT
-    "customer name"  AS customer,
+    customer_name  AS customer,
     segment        AS market_segment,
     sales          AS revenue,
     profit         AS net_profit
