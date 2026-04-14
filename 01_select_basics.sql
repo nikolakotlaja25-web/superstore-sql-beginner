@@ -1,4 +1,3 @@
--- Author: Nikola Kotlaja | GitHub: nikolakotlaja25-web
 -- ================================================================
 -- 01 — SELECT BASICS
 -- Topics: SELECT, FROM, *, column aliases, DISTINCT, expressions
@@ -20,7 +19,7 @@ FROM superstore;
 -- 2. Retrieve only specific columns
 --    Pick just the columns you need — much faster and cleaner.
 -- ----------------------------------------------------------------
-SELECT customer_name, segment, city, state
+SELECT segment, city, state
 FROM superstore;
 
 
@@ -29,7 +28,7 @@ FROM superstore;
 --    Rename a column in your result without changing the table.
 -- ----------------------------------------------------------------
 SELECT
-    customer_name  AS customer,
+    "customer name"  AS customer,
     segment        AS market_segment,
     sales          AS revenue,
     profit         AS net_profit
@@ -79,7 +78,7 @@ FROM superstore;
 --    How much does each unit cost on average in each row?
 -- ----------------------------------------------------------------
 SELECT
-    product_name,
+    "product name",
     quantity,
     sales,
     ROUND(sales / quantity, 2) AS price_per_unit
