@@ -1,0 +1,15 @@
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# CSV files
+*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# DBeaver
+.dbeaver/
